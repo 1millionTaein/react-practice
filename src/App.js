@@ -93,12 +93,7 @@ function App() {
           로그아웃
         </button>
       </form>
-      {user ? (
-        <h3>
-          {user?.username}
-          {user?.nickname}
-        </h3>
-      ) : null}
+      {user ? <h3>{user?.username}</h3> : null}
       <Switch>
         <Route exact path="/">
           <Home />
